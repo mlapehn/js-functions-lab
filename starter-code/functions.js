@@ -24,21 +24,26 @@ function getSum(total, num) {
 
 
 // Question 4
-function multiplyArray() {
-
+function multiplyArray(array) {
+	var sum = 0;
+	for(i = 0, i < array.length, i++){
+		sum += array[i];
+	}
+	return sum;
 }
-
+// we want to return sum
+// need a for loop to generate sum
+// 
 
 // Question 5
-var numberOfArguments = function()
-  
-
-
-
+var numberOfArguments = function() {
+	return arg.length
+}
+//
 
 // Question 6
-var reverseString = function ()(str){
-  var arr = str.split('');
+var reverseString = function ()(rstr){
+  var arr = rstr.split('');
   var revArr = [];
   for (var i = arr.length - 1; i >= 0; i--) {
     revArr.push(arr[i]);
@@ -49,9 +54,16 @@ var reverseString = function ()(str){
 
 
 // Question 7
-function findLongestWord () {
-  
+function findLongestWord (arr) {
+  longest = 0;
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i].length > longest) {
+      longest = arr[i].length;
+    }
+  }
+  return longest;
 }
+
 
 
 // Question 8
